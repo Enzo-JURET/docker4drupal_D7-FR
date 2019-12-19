@@ -43,9 +43,7 @@ La pile (stack) Drupal se compose des conteneurs par défaut suivants :
 | Portainer       | latest                 | `portainer`     | [portainer/portainer]              | ✓        |
 | Traefik         | latest                 | `traefik`       | [_/traefik]                        | ✓        |
 
-Versions Drupal supportées : 7
-
-❗️PHP 5.6[a atteint la fin de vie](http://php.net/supported-versions.php) et n'est plus supporté par l'équipe PHP. PHP 7.1 est actuellement en mode correctif de sécurité uniquement. Nous vous conseillons fortement de migrer vers la dernière version stable de PHP.   
+Versions Drupal supportées : 7  
 
 ## Documentation
 
