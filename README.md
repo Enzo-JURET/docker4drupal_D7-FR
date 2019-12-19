@@ -1,4 +1,4 @@
-# Docker-based Drupal stack
+# Pile Drupal à base de dockers
 
 [![Build Status](https://travis-ci.org/wodby/docker4drupal.svg?branch=master)](https://travis-ci.org/wodby/docker4drupal)
 
@@ -16,11 +16,11 @@ La pile (stack) Drupal se compose des conteneurs par défaut suivants :
 
 | Container       | Versions               | Service name    | Image                              | Default |
 | --------------  | ---------------------- | --------------- | ---------------------------------- | ------- |
-| [Nginx]         | 1.17, 1.16             | `nginx`         | [wodby/nginx]                      | ✓        |
-| [Apache]        | 2.4                    | `apache`        | [wodby/apache]                     |         |
-| [Drupal]        | 8, 7                   | `php`           | [wodby/drupal]                     |        |
+| [Nginx]         | 1.17, 1.16             | `nginx`         | [wodby/nginx]                      |         |
+| [Apache]        | 2.4                    | `apache`        | [wodby/apache]                     | ✓        |
+| [Drupal]        | 8, 7                   | `php`           | [wodby/drupal]                     |         |
 | [PHP]           | 7.3, 7.2, 7.1, 5.6     | `php`           | [wodby/drupal-php]                 | ✓        |
-| [MariaDB]       | 10.4, 10.3, 10.2, 10.1 | `mariadb`       | [wodby/mariadb]                    | ✓       |
+| [MariaDB]       | 10.4, 10.3, 10.2, 10.1 | `mariadb`       | [wodby/mariadb]                    | ✓        |
 | [PostgreSQL]    | 12, 11, 10, 9.x        | `postgres`      | [wodby/postgres]                   |         |
 | [Redis]         | 5, 4                   | `redis`         | [wodby/redis]                      |         |
 | [Memcached]     | 1                      | `memcached`     | [wodby/memcached]                  |         |
@@ -40,10 +40,10 @@ La pile (stack) Drupal se compose des conteneurs par défaut suivants :
 | Adminer         | 4.6                    | `adminer`       | [wodby/adminer]                    |         |
 | phpMyAdmin      | latest                 | `pma`           | [phpmyadmin/phpmyadmin]            |         |
 | Selenium chrome | 3.141                  | `chrome`        | [selenium/standalone-chrome]       |         |
-| Portainer       | latest                 | `portainer`     | [portainer/portainer]              | ✓       |
-| Traefik         | latest                 | `traefik`       | [_/traefik]                        | ✓       |
+| Portainer       | latest                 | `portainer`     | [portainer/portainer]              | ✓        |
+| Traefik         | latest                 | `traefik`       | [_/traefik]                        | ✓        |
 
-Versions Drupal supportées : 8 / 7
+Versions Drupal supportées : 7
 
 ❗️PHP 5.6[a atteint la fin de vie](http://php.net/supported-versions.php) et n'est plus supporté par l'équipe PHP. PHP 7.1 est actuellement en mode correctif de sécurité uniquement. Nous vous conseillons fortement de migrer vers la dernière version stable de PHP.   
 
