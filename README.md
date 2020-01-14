@@ -19,15 +19,15 @@ La pile (stack) Drupal se compose des conteneurs par défaut suivants :
 | [Nginx]         | 1.17, 1.16             | `nginx`         | [wodby/nginx]                      |         |
 | [Apache]        | 2.4                    | `apache`        | [wodby/apache]                     | ✓        |
 | [Drupal]        | 8, 7                   | `php`           | [wodby/drupal]                     |         |
-| [PHP]           | 7.3, 7.2, 7.1, 5.6     | `php`           | [wodby/drupal-php]                 | ✓        |
-| [MariaDB]       | 10.4, 10.3, 10.2, 10.1 | `mariadb`       | [wodby/mariadb]                    | ✓        |
+| [PHP]           | 7.2				       | `php`           | [wodby/drupal-php]                 | ✓        |
+| [MariaDB]       | 10.4				   | `mariadb`       | [wodby/mariadb]                    | ✓        |
 | [PostgreSQL]    | 12, 11, 10, 9.x        | `postgres`      | [wodby/postgres]                   |         |
 | [Redis]         | 5, 4                   | `redis`         | [wodby/redis]                      |         |
 | [Memcached]     | 1                      | `memcached`     | [wodby/memcached]                  | ✓        |
-| [Varnish]       | 6.0, 4.1               | `varnish`       | [wodby/varnish]                    | ✓        |
+| [Varnish]       | 6.0		               | `varnish`       | [wodby/varnish]                    | ✓        |
 | [Node.js]       | 12, 10, 8              | `node`          | [wodby/node]                       |         |
 | [Drupal node]   | 1.0                    | `drupal-node`   | [wodby/drupal-node]                |         |
-| [Solr]          | 8, 7, 6, 5             | `solr`          | [wodby/solr]                       | ✓        |
+| [Solr]          | 8			           | `solr`          | [wodby/solr]                       | ✓        |
 | [Elasticsearch] | 7, 6                   | `elasticsearch` | [wodby/elasticsearch]              |         |
 | [Kibana]        | 7, 6                   | `kibana`        | [wodby/kibana]                     |         |
 | [OpenSMTPD]     | 6.0                    | `opensmtpd`     | [wodby/opensmtpd]                  |         |
