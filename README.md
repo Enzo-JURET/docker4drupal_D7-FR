@@ -72,9 +72,9 @@ Docker4Drupal est un projet conçu pour vous aider à créer un environnement lo
 * Télécharger / Cloner le projet dans un répertoire
 * Modifier le fichier des variables d'environnement (.env)
 * Modifier le fichier de configuration .yml (docker-compose.yml)
-* Déplacer les fichiers de Docker4Drupal à la racine du projet Drupal 8
+* Adapter les volumes selon l'emplacement de votre Drupal
 * Démarer le serveur Docker avec la commande (docker-compose up -d)
-* Accéder à votre site avec cette URL : PROJECT_BASE_URL:PORT_TRAEFIK
+* Accéder à votre site se type d'URL : PROJECT_BASE_URL:PORT_TRAEFIK
 
 
 ## Autres projets Docker4x
