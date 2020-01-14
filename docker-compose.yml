@@ -52,7 +52,7 @@ services:
       COLUMNS: 80
     # Définit la chemin ou se trouve votre projet Drupal, afin que php connaissent l'emplacement où il doit agir
     volumes:
-      - ./:/var/www/html
+      - [EMPLACEMENT DU DRUPAL]:/var/www/html
 
 #######################################################################################################
   # Nom de la section du conteneur apache
@@ -76,7 +76,7 @@ services:
       APACHE_DOCUMENT_ROOT: /var/www/html
     # Définit la chemin ou se trouve votre projet Drupal, afin que apache connaissent l'emplacement où il doit agir
     volumes:
-      - ./:/var/www/html
+      - [EMPLACEMENT DU DRUPAL]:/var/www/html
     labels:
       - "traefik.http.routers.${PROJECT_NAME}_apache.rule=Host(`${PROJECT_BASE_URL}`)"
 
@@ -106,6 +106,14 @@ services:
     labels:
       - "traefik.http.services.${PROJECT_NAME}_varnish.loadbalancer.server.port=6081"
       - "traefik.http.routers.${PROJECT_NAME}_varnish.rule=Host(`varnish.${PROJECT_BASE_URL}`)"
+
+#######################################################################################################
+  # Nom de la section du conteneur memcached
+  memcached:
+    # Image memcached venant de Docker Hub (Indéxé de la version de memcached choisi dans le fichier .env)
+    image: wodby/memcached:$MEMCACHED_TAG
+    # Nom du conteneur (Préfixé du nom de votre projet se trouvant dans le fichier .env) 
+    container_name: "${PROJECT_NAME}_memcached"
 
 #######################################################################################################
   # Nom de la section du conteneur solr
